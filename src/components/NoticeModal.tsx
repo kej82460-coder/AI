@@ -87,7 +87,7 @@ export const NoticeModal: React.FC<NoticeModalProps> = ({
                 <span>접수기간 (선착순 마감 아님)</span>
               </div>
               <p className="font-semibold text-stone-900 text-xs sm:text-sm">
-                {currentCourse.applicationPeriod}
+                {currentCourse.applicationPeriod || '별도 안내 (센터 문의)'}
               </p>
             </div>
 

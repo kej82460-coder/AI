@@ -17,12 +17,8 @@ export default function App() {
   const [selectedCourseId, setSelectedCourseId] = useState<string>(COURSES_KNOWLEDGE_BASE[0].id);
 
   // Gemini API Key Authorization State
-  const [apiKey, setApiKey] = useState<string>(() => {
-    return localStorage.getItem('paju_gemini_api_key') || '';
-  });
-  const [isApiKeyApproved, setIsApiKeyApproved] = useState<boolean>(() => {
-    return localStorage.getItem('paju_gemini_api_approved') === 'true';
-  });
+  const [apiKey, setApiKey] = useState<string>('');
+  const [isApiKeyApproved, setIsApiKeyApproved] = useState<boolean>(false);
   const [hasServerKey, setHasServerKey] = useState<boolean>(false);
 
   // View state: 'landing' (motion graphics hero overview) or 'chat' (AI chatbot guidance)
@@ -119,12 +115,10 @@ export default function App() {
       if (res.ok && data.success) {
         setApiKey(trimmedKey);
         setIsApiKeyApproved(true);
-        localStorage.setItem('paju_gemini_api_key', trimmedKey);
-        localStorage.setItem('paju_gemini_api_approved', 'true');
         return { success: true, message: data.message || 'Gemini API Key가 성공적으로 승인되었습니다.' };
       } else {
         setIsApiKeyApproved(false);
-        localStorage.removeItem('paju_gemini_api_approved');
+        setApiKey('');
         return { success: false, message: data.message || 'Gemini API Key 승인에 실패하였습니다.' };
       }
     } catch (err: any) {
@@ -135,8 +129,6 @@ export default function App() {
   const handleResetKey = () => {
     setApiKey('');
     setIsApiKeyApproved(false);
-    localStorage.removeItem('paju_gemini_api_key');
-    localStorage.removeItem('paju_gemini_api_approved');
     setActiveView('landing');
   };
 

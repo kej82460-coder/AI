@@ -411,9 +411,11 @@ export const LandingHero: React.FC<LandingHeroProps> = ({
                     </span>
                     <span
                       className={`text-xs font-bold px-2.5 py-0.5 rounded-full border ${
-                        isRecruiting
+                        course.status === '모집중'
                           ? 'bg-emerald-100 text-emerald-800 border-emerald-300 animate-pulse'
-                          : 'bg-stone-200 text-stone-700 border-stone-300'
+                          : course.status === '교육중'
+                          ? 'bg-sky-100 text-sky-800 border-sky-300'
+                          : 'bg-stone-200 text-stone-600 border-stone-300'
                       }`}
                     >
                       {course.status}
@@ -429,10 +431,12 @@ export const LandingHero: React.FC<LandingHeroProps> = ({
                   </p>
 
                   <div className="bg-stone-100/80 p-3 rounded-xl space-y-1 text-xs text-stone-700">
-                    <div className="flex justify-between">
-                      <span className="text-stone-500">접수기간:</span>
-                      <span className="font-semibold text-stone-900">{course.applicationPeriod}</span>
-                    </div>
+                    {course.applicationPeriod ? (
+                      <div className="flex justify-between">
+                        <span className="text-stone-500">접수기간:</span>
+                        <span className="font-semibold text-stone-900">{course.applicationPeriod}</span>
+                      </div>
+                    ) : null}
                     <div className="flex justify-between">
                       <span className="text-stone-500">교육기간:</span>
                       <span className="font-medium text-stone-800">{course.trainingPeriod}</span>

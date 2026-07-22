@@ -16,13 +16,19 @@ export const ApiKeyAuthCard: React.FC<ApiKeyAuthCardProps> = ({
   onApproveKey,
   onResetKey,
 }) => {
-  const [inputKey, setInputKey] = useState<string>(apiKey || '');
+  const [inputKey, setInputKey] = useState<string>('');
   const [showPassword, setShowPassword] = useState<boolean>(false);
   const [isVerifying, setIsVerifying] = useState<boolean>(false);
   const [feedback, setFeedback] = useState<{ type: 'success' | 'error' | null; message: string }>({
     type: null,
     message: '',
   });
+
+  const handleReset = () => {
+    setInputKey('');
+    setFeedback({ type: null, message: '' });
+    onResetKey();
+  };
 
   const handleVerify = async (keyToUse?: string) => {
     const targetKey = keyToUse !== undefined ? keyToUse : inputKey.trim();
@@ -97,7 +103,7 @@ export const ApiKeyAuthCard: React.FC<ApiKeyAuthCardProps> = ({
 
           {isApproved && (
             <button
-              onClick={onResetKey}
+              onClick={handleReset}
               className="inline-flex items-center space-x-1.5 text-xs bg-white/10 hover:bg-white/20 text-stone-300 hover:text-white px-3 py-1.5 rounded-xl border border-white/15 transition-all cursor-pointer shrink-0 font-bold"
             >
               <RefreshCw className="w-3.5 h-3.5" />

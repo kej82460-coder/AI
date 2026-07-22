@@ -2,7 +2,7 @@ export interface Course {
   id: string;
   name: string;
   category: string;
-  status: '모집중' | '모집예정' | '접수마감';
+  status: '모집중' | '모집예정' | '접수마감' | '종료' | '교육중';
   targetAudience: string;
   applicationPeriod: string;
   trainingPeriod: string;

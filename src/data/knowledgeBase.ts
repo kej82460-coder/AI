@@ -1,7 +1,7 @@
 import { Course, CenterInfo } from '../types';
 
 export const DEFAULT_CENTER_INFO: CenterInfo = {
-  name: "파주새일센터",
+  name: "파주여성새로일하기센터(이하 파주새일센터)",
   phone: "031-942-1653",
   fax: "031-942-1654",
   address: "경기도 파주시 시민회관길 16 파주여성새로일하기센터 (직업교육훈련팀)",
@@ -19,8 +19,8 @@ export const COURSES_KNOWLEDGE_BASE: Course[] = [
     status: "모집중",
     targetAudience: "취업 의지가 확고한 미취업 여성 및 경력단절여성 (IT 및 교육 분야 재취업 희망자 우대)",
     noticeTitle: "2026년 직업교육훈련 「AI디지털튜터 양성과정」 수강생 모집공고",
-    applicationPeriod: "2026.08.01 ~ 2026.08.25 (방문접수 기준, 18:00 마감)",
-    trainingPeriod: "2026.09.01 ~ 2026.11.15 (총 50일 / 200시간)",
+    applicationPeriod: "2026.07.13 ~ 2026.08.20 (17:00 마감)",
+    trainingPeriod: "2026.08.31 ~ 2026.11.15 (총 50일, 200시간)",
     trainingSchedule: "월~금 09:30 ~ 13:30 (일 4시간)",
     trainingLocation: "파주여성새로일하기센터 3층 제1IT교육실",
     totalHours: "200시간",
@@ -30,99 +30,87 @@ export const COURSES_KNOWLEDGE_BASE: Course[] = [
     selectionProcess: "1차 서류접수 → 2차 면접심사 (개강 5~7일 전 유선 및 문자로 면접일정 개별 안내)",
     allowanceInfo: {
       participationAllowance: "교육일수 20일 기준, 출석률 80% 이상 시 지급 (월 최대 훈련수당 지급 조건 충족 시)",
-      employmentSuccessAllowance: "수료 후 3개월 이내 관련 분야 취업 시 지급 (상세 증빙서류 제출 필요)"
+      employmentSuccessAllowance: "수료 후 6개월 이내 관련 분야 취업 시 지급 (상세 증빙서류 제출 필요)"
     },
     documentsRequired: [
-      "직업교육훈련 참가신청서 1부 (센터 비치 또는 홈페이지 양식 다운로드)",
-      "구직신청서 1부",
-      "주민등록등본 1부 (최근 3개월 이내 발급)",
-      "반명함판 증명사진 1매",
-      "관련 자격증 사본 (소지자에 한함)"
+      "신청서류(센터 비치): 직업교육훈련 참가신청서, 개인정보제공동의서 외"
     ],
     description: "생성형 AI 툴 및 에듀테크 디바이스 활용법, 초·중·고 디지털 튜터 실무 지도법과 AI 윤리 교육을 종합적으로 습득하여 학교 및 교육기관의 AI 디지털 튜터로의 취업을 지원합니다."
   },
   {
     id: "course-2026-02",
-    name: "실무형 세무회계·ERP 전산세무 양성과정",
-    category: "경영/사무",
-    status: "모집중",
-    targetAudience: "세무회계 분야 취업을 희망하는 미취업 여성 (전산회계 자격증 소지자 및 사무직 재취업 희망자 우대)",
-    noticeTitle: "2026년 직업교육훈련 「실무형 세무회계·ERP 전산세무 양성과정」 모집안내",
-    applicationPeriod: "2026.08.05 ~ 2026.08.28 (방문접수 기준, 18:00 마감)",
-    trainingPeriod: "2026.09.05 ~ 2026.11.20 (총 52일 / 208시간)",
-    trainingSchedule: "월~금 14:00 ~ 18:00 (일 4시간)",
-    trainingLocation: "파주여성새로일하기센터 2층 회계실무 전용실",
-    totalHours: "208시간",
-    capacity: 20,
-    fee: "무료 (국비 + 지방비 100% 지원)",
-    applicationMethod: "센터 직접 방문접수 (※ 온라인 및 전화 접수 불가)",
-    selectionProcess: "1차 서류접수 → 2차 면접심사 (개강 5~7일 전 유선 및 문자로 면접일정 개별 안내)",
-    allowanceInfo: {
-      participationAllowance: "교육일수 20일 기준, 출석률 80% 이상 시 지급 (출석 조건 충족 필수)",
-      employmentSuccessAllowance: "수료 후 3개월 이내 회계·사무 분야 취업 확정 시 지급"
-    },
-    documentsRequired: [
-      "직업교육훈련 참가신청서 1부",
-      "구직신청서 1부",
-      "주민등록등본 1부",
-      "자격증 증빙 서류 사본"
-    ],
-    description: "전산세무회계, KLeP 및 ERP 정보관리사 회계 프로그램 실무를 익혀 중소기업 회계사무원 및 세무사 사무소 취업을 전폭 지원합니다."
-  },
-  {
-    id: "course-2026-03",
-    name: "초등 코딩 & 생성형 AI 교육전문가 양성과정",
-    category: "교육/강사",
-    status: "모집예정",
-    targetAudience: "방과후 강사, 코딩 교육 및 AI 교육 분야로 재취업을 희망하는 미취업 여성",
-    noticeTitle: "2026년 직업교육훈련 「초등 코딩 & 생성형 AI 교육전문가 양성과정」 모집 사전안내",
-    applicationPeriod: "2026.09.01 ~ 2026.09.20 (예정, 방문접수)",
-    trainingPeriod: "2026.10.01 ~ 2026.12.10 (총 45일 / 180시간)",
-    trainingSchedule: "월~금 09:30 ~ 13:30 (일 4시간)",
-    trainingLocation: "파주여성새로일하기센터 3층 강의실",
-    totalHours: "180시간",
-    capacity: 18,
-    fee: "무료 (국비 + 지방비 100% 지원)",
-    applicationMethod: "센터 직접 방문접수 (※ 온라인 및 전화 접수 불가)",
-    selectionProcess: "1차 서류접수 → 2차 면접심사 (개강 5~7일 전 유선 및 문자로 면접일정 개별 안내)",
-    allowanceInfo: {
-      participationAllowance: "교육일수 20일 기준, 출석률 80% 이상 시 지급 조건 충족 시 지급",
-      employmentSuccessAllowance: "수료 후 3개월 이내 교육기관/방과후학교 취업 시 지급"
-    },
-    documentsRequired: [
-      "직업교육훈련 참가신청서 1부",
-      "구직등록신청서 1부",
-      "주민등록등본 1부"
-    ],
-    description: "엔트리, 파이썬 기본 및 생성형 AI 유치·초등 교구 활용법을 실습하여 학교 방과후 교사 및 창의체험 강사로 출강할 수 있도록 유연한 취업 기회를 제공합니다."
-  },
-  {
-    id: "course-2026-04",
-    name: "사회복지 행정실무자 양성과정",
+    name: "사회복지실무전문가 양성과정",
     category: "사회복지/행정",
-    status: "모집중",
+    status: "종료",
     targetAudience: "사회복지사 자격증 보유자 중 행정실무 및 W4C 시스템 실무를 습득하여 취업하려는 여성",
-    noticeTitle: "2026년 직업교육훈련 「사회복지 행정실무자 양성과정」 수강생 모집공고",
-    applicationPeriod: "2026.08.01 ~ 2026.08.22 (방문접수 기준, 18:00 마감)",
-    trainingPeriod: "2026.09.01 ~ 2026.10.25 (총 35일 / 140시간)",
+    noticeTitle: "2026년 직업교육훈련 「사회복지실무전문가 양성과정」 수강생 모집공고",
+    applicationPeriod: "",
+    trainingPeriod: "2026.05.06 ~ 2026.06.20 (총 30일, 120시간)",
     trainingSchedule: "월~금 13:30 ~ 17:30 (일 4시간)",
     trainingLocation: "파주여성새로일하기센터 2층 강의실",
-    totalHours: "140시간",
+    totalHours: "120시간",
     capacity: 20,
     fee: "무료 (국비 + 지방비 100% 지원)",
     applicationMethod: "센터 직접 방문접수 (※ 온라인 및 전화 접수 불가)",
     selectionProcess: "1차 서류접수 → 2차 면접심사 (개강 5~7일 전 유선 및 문자로 면접일정 개별 안내)",
     allowanceInfo: {
       participationAllowance: "교육일수 20일 기준, 출석률 80% 이상 시 지급",
-      employmentSuccessAllowance: "수료 후 3개월 이내 사회복지 시설 취업 시 지급"
+      employmentSuccessAllowance: "수료 후 6개월 이내 사회복지 시설 취업 시 지급"
     },
     documentsRequired: [
-      "직업교육훈련 참가신청서 1부",
-      "구직신청서 1부",
-      "사회복지사 자격증 사본 1부",
-      "주민등록등본 1부"
+      "신청서류(센터 비치): 직업교육훈련 참가신청서, 개인정보제공동의서 외"
     ],
     description: "사회복지 시설 행정, 보조금 회계(W4C), 프로포절 작성법 등 실무 중심 교육을 통해 노인·장애인·아동 복지시설 취업을 연계합니다."
+  },
+  {
+    id: "course-2026-03",
+    name: "간호조무사 리스타트 양성과정",
+    category: "의료/보건",
+    status: "종료",
+    targetAudience: "간호조무사 자격증 소지자 중 병·의원 재취업을 희망하는 여성",
+    noticeTitle: "2026년 직업교육훈련 「간호조무사 리스타트 양성과정」 수강생 모집공고",
+    applicationPeriod: "",
+    trainingPeriod: "2026.06.08 ~ 2026.07.20 (총 30일, 120시간)",
+    trainingSchedule: "월~금 09:30 ~ 13:30 (일 4시간)",
+    trainingLocation: "파주여성새로일하기센터 2층 강의실",
+    totalHours: "120시간",
+    capacity: 20,
+    fee: "무료 (국비 + 지방비 100% 지원)",
+    applicationMethod: "센터 직접 방문접수 (※ 온라인 및 전화 접수 불가)",
+    selectionProcess: "1차 서류접수 → 2차 면접심사 (개강 5~7일 전 유선 및 문자로 면접일정 개별 안내)",
+    allowanceInfo: {
+      participationAllowance: "교육일수 20일 기준, 출석률 80% 이상 시 지급",
+      employmentSuccessAllowance: "수료 후 6개월 이내 의료기관 취업 시 지급"
+    },
+    documentsRequired: [
+      "신청서류(센터 비치): 직업교육훈련 참가신청서, 개인정보제공동의서 외"
+    ],
+    description: "간호조무사 자격증을 보유하고 있으나 경력단절로 재취업에 어려움을 겪는 여성을 대상으로 병의원 실무, 최신 의료 행정 및 임상 실무 교육을 제공합니다."
+  },
+  {
+    id: "course-2026-04",
+    name: "디지털퍼블리싱콘텐츠마케팅 과정",
+    category: "디자인/마케팅",
+    status: "교육중",
+    targetAudience: "디지털 마케팅 및 콘텐츠 제작, 웹/카드뉴스 디자인 분야 취업을 희망하는 미취업 여성",
+    noticeTitle: "2026년 직업교육훈련 「디지털퍼블리싱콘텐츠마케팅 과정」 수강생 모집공고",
+    applicationPeriod: "",
+    trainingPeriod: "2026.06.22 ~ 2026.09.15 (총 60일, 240시간)",
+    trainingSchedule: "월~금 09:30 ~ 13:30 (일 4시간)",
+    trainingLocation: "파주여성새로일하기센터 3층 제2IT교육실",
+    totalHours: "240시간",
+    capacity: 20,
+    fee: "무료 (국비 + 지방비 100% 지원)",
+    applicationMethod: "센터 직접 방문접수 (※ 온라인 및 전화 접수 불가)",
+    selectionProcess: "1차 서류접수 → 2차 면접심사 (개강 5~7일 전 유선 및 문자로 면접일정 개별 안내)",
+    allowanceInfo: {
+      participationAllowance: "교육일수 20일 기준, 출석률 80% 이상 시 지급",
+      employmentSuccessAllowance: "수료 후 6개월 이내 마케팅/디자인 관련 분야 취업 시 지급"
+    },
+    documentsRequired: [
+      "신청서류(센터 비치): 직업교육훈련 참가신청서, 개인정보제공동의서 외"
+    ],
+    description: "디지털 퍼블리싱, 포토샵·일러스트레이터 실무, SNS 마케팅 콘텐츠 기획 및 광고 집행 실무를 배워 웹/마케팅 분야 취업을 지원합니다."
   }
 ];
 
