@@ -1,0 +1,6 @@
+{
+  "name": "파주새일센터 직업교육훈련 신청 가이드봇",
+  "description": "파주새일센터 직업교육훈련(취업 목적) 모집안내, 신청자격, 선발절차, 훈련수당 등을 근거 기반으로 친절하게 안내하는 AI 도우미 서비스입니다.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
